@@ -14,7 +14,7 @@ public class SystemConfig {
 
     // Default constructor with default values
     public SystemConfig() {
-        this.totalTickets = 100;
+        this.totalTickets =100;
         this.ticketReleaseRate = 10;
         this.customerRetrievalRate = 5;
         this.maxTicketCapacity = 500;
