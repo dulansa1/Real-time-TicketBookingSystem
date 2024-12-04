@@ -1,0 +1,14 @@
+Vendor-3 added 5 tickets. (id=2, id=3, id=4, id=5, id=6) Total: 6
+Vendor-2 added 5 tickets. (id=7, id=8, id=9, id=10, id=11) Total: 11
+Vendor-1 tried to add tickets, but capacity is full.
+Customer-2 purchased 6 tickets. (id=1, id=2, id=3, id=4, id=5, id=6) Remaining: 5
+Vendor-3 added 5 tickets. (id=12, id=13, id=14, id=15, id=16) Total: 10
+Vendor-2 tried to add tickets, but capacity is full.
+Vendor-1 tried to add tickets, but capacity is full.
+Vendor-1 tried to add tickets, but capacity is full.
+Vendor-3 tried to add tickets, but capacity is full.
+Vendor-2 tried to add tickets, but capacity is full.
+Customer-2 purchased 6 tickets. (id=7, id=8, id=9, id=10, id=11, id=12) Remaining: 4
+Vendor-2 added 5 tickets. (id=17, id=18, id=19, id=20, id=21) Total: 9
+Vendor-3 added 5 tickets. (id=22, id=23, id=24, id=25, id=26) Total: 14
+Vendor-1 tried to add tickets, but capacity is full.
