@@ -5,15 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e97cf496-3b02-42d8-848c-ce03032d9a35" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/backend/TicketingSystem/CLI/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/backend/TicketingSystem/CLI/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/backend/TicketingSystem/CLI/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/backend/TicketingSystem/CLI/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/backend/TicketingSystem/CLI/SystemConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/backend/TicketingSystem/CLI/SystemConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/backend/TicketingSystem/CLI/TicketPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/backend/TicketingSystem/CLI/TicketPool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/backend/TicketingSystem/CLI/Vendor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/backend/TicketingSystem/CLI/Vendor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/backend/TicketingSystem/controller/CustomerController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/backend/TicketingSystem/controller/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/backend/TicketingSystem/controller/TicketController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/backend/TicketingSystem/entity/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/backend/TicketingSystem/entity/Ticket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/backend/TicketingSystem/service/impl/CustomerServiceImpl.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/system_log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/system_log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/backend/TicketingSystem/CLI/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/backend/TicketingSystem/CLI/Customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/backend/TicketingSystem/CLI/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/backend/TicketingSystem/CLI/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/backend/TicketingSystem/CLI/SystemConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/backend/TicketingSystem/CLI/SystemConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/backend/TicketingSystem/CLI/TicketPool.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/backend/TicketingSystem/CLI/TicketPool.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/backend/TicketingSystem/CLI/Vendor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/backend/TicketingSystem/CLI/Vendor.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +55,8 @@
   &quot;keyToString&quot;: {
     &quot;Application.CLI.executor&quot;: &quot;Run&quot;,
     &quot;Downloaded.Files.Path.Enabled&quot;: &quot;true&quot;,
+    &quot;JUnit.TicketingSystemApplicationTests.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.TicketingSystem [clean].executor&quot;: &quot;Run&quot;,
     &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
     &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
     &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
@@ -65,7 +78,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.editor&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -126,11 +139,29 @@
       <workItem from="1733292629251" duration="354000" />
       <workItem from="1733292989867" duration="2161000" />
       <workItem from="1733296500712" duration="6256000" />
-      <workItem from="1733304178506" duration="13000" />
+      <workItem from="1733304178506" duration="432000" />
+      <workItem from="1733305674491" duration="2000" />
+      <workItem from="1733315893985" duration="4618000" />
+      <workItem from="1733323776151" duration="1380000" />
+      <workItem from="1733333158040" duration="2617000" />
+      <workItem from="1733336066559" duration="1191000" />
+      <workItem from="1733374570974" duration="2251000" />
+      <workItem from="1733387418121" duration="701000" />
+      <workItem from="1733388128808" duration="3466000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ClassNotFoundException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

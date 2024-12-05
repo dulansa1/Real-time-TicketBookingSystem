@@ -1,6 +1,6 @@
 package com.backend.TicketingSystem.CLI;
 
-class Vendor implements Runnable {
+public class Vendor implements Runnable {
     private final TicketPool pool;
     private final int ticketReleaseRate;
 

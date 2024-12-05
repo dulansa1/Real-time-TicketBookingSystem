@@ -1,6 +1,6 @@
 package com.backend.TicketingSystem.CLI;
 
-class Customer implements Runnable {
+public class Customer implements Runnable {
     private final TicketPool pool;
     private final int ticketDemand;
 
@@ -14,13 +14,7 @@ class Customer implements Runnable {
         while (true) {
             try {
                 Thread.sleep(2000); // Delay for ticket purchase
-                synchronized (pool) {
-                    if (pool.getAvailableTickets() >= ticketDemand) {
-                        pool.removeTicket(ticketDemand);
-                    } else {
-                        System.out.println(Thread.currentThread().getName() + " is waiting to retrieve tickets.");
-                    }
-                }
+                pool.removeTicket(ticketDemand);
             } catch (InterruptedException e) {
                 System.out.println("Customer interrupted: " + Thread.currentThread().getName());
                 break;

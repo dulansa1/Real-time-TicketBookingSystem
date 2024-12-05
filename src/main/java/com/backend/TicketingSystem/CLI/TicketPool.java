@@ -8,18 +8,15 @@ import java.util.List;
 
 public class TicketPool {
     private final List<Integer> tickets;
-    private final int maxCapacity;
+    private final int maxTicketCapacity;
+    private final int totalTickets;
     private final FileWriter logWriter;
-    private int nextTicketId = 1; // Unique ticket ID generator
+    private int nextTicketId = 1; // Start ticket IDs from 1
 
-    public TicketPool(int maxCapacity, int initialTotalTickets) {
+    public TicketPool(int maxTicketCapacity, int totalTickets) {
         this.tickets = Collections.synchronizedList(new LinkedList<>());
-        this.maxCapacity = maxCapacity;
-
-        // Initialize the ticket pool with the initial total tickets
-        for (int i = 0; i < initialTotalTickets; i++) {
-            tickets.add(nextTicketId++);
-        }
+        this.maxTicketCapacity = maxTicketCapacity;
+        this.totalTickets = totalTickets;
 
         // Initialize logWriter
         FileWriter writer = null;
@@ -31,57 +28,73 @@ public class TicketPool {
         this.logWriter = writer;
     }
 
+    // Vendor adds tickets
+// Vendor adds tickets
     public synchronized void addTickets(int count) {
         try {
-            if (tickets.size() + count <= maxCapacity) {
-                StringBuilder addedTickets = new StringBuilder();
-                for (int i = 0; i < count; i++) {
+            while (tickets.size() >= maxTicketCapacity) {
+                logAndPrint(Thread.currentThread().getName() + " is waiting to add tickets.");
+                wait(); // Wait until there is space in the pool
+            }
+            if (nextTicketId > totalTickets) {
+                logAndPrint(Thread.currentThread().getName() + " tried to add tickets, but total tickets limit reached.");
+                return;
+            }
+
+            int ticketsToAdd = Math.min(count, maxTicketCapacity - tickets.size());
+            StringBuilder addedTickets = new StringBuilder();
+            for (int i = 0; i < ticketsToAdd; i++) {
+                if (nextTicketId <= totalTickets) {
                     int ticketId = nextTicketId++;
                     tickets.add(ticketId);
-                    addedTickets.append("id=").append(ticketId).append(", ");
+                    addedTickets.append("Ticket id=").append(ticketId).append(", ");
                 }
-                // Remove trailing comma and space
-                if (addedTickets.length() > 0) {
-                    addedTickets.setLength(addedTickets.length() - 2);
-                }
-                logAndPrint(Thread.currentThread().getName() + " added " + count + " tickets. (" + addedTickets + ")"+" Total: " + tickets.size() );
-            } else {
-                logAndPrint(Thread.currentThread().getName() + " tried to add tickets, but capacity is full.");
             }
+
+            if (addedTickets.length() > 0) {
+                addedTickets.setLength(addedTickets.length() - 2); // Remove trailing comma and space
+            }
+
+            logAndPrint(Thread.currentThread().getName() + " added " + ticketsToAdd + " tickets. (" + addedTickets + ") Total: " + tickets.size());
+            notifyAll(); // Notify customers that tickets are available
         } catch (Exception e) {
             handleError("Error adding tickets: ", e);
         }
     }
 
+    // Customer removes (purchases) tickets
     public synchronized void removeTicket(int count) {
         try {
-            if (tickets.size() >= count) {
-                StringBuilder retrievedTickets = new StringBuilder();
-                for (int i = 0; i < count; i++) {
-                    int ticketId = tickets.remove(0);
-                    retrievedTickets.append("id=").append(ticketId).append(", ");
-                }
-                // Remove trailing comma and space
-                if (retrievedTickets.length() > 0) {
-                    retrievedTickets.setLength(retrievedTickets.length() - 2);
-                }
-                logAndPrint(Thread.currentThread().getName() + " purchased " + count + " tickets. (" + retrievedTickets + ")"+" Remaining: " + tickets.size() );
-
-            } else {
-                logAndPrint(Thread.currentThread().getName() + " is waiting to retrieve tickets.");
+            while (tickets.isEmpty()) {
+                logAndPrint(Thread.currentThread().getName() + " is waiting to purchase tickets.");
+                wait(); // Wait until tickets are available
             }
+
+            if (nextTicketId > totalTickets) {
+                logAndPrint(Thread.currentThread().getName() + " trying to buy tickets, but tickets are sold out.");
+                return;
+            }
+
+            int ticketsToRemove = Math.min(count, tickets.size());
+            StringBuilder retrievedTickets = new StringBuilder();
+            for (int i = 0; i < ticketsToRemove; i++) {
+                if (!tickets.isEmpty()) {
+                    int ticketId = tickets.remove(0);
+                    retrievedTickets.append("Ticket id=").append(ticketId).append(", ");
+                }
+            }
+
+            if (retrievedTickets.length() > 0) {
+                retrievedTickets.setLength(retrievedTickets.length() - 2); // Remove trailing comma and space
+            }
+
+            logAndPrint(Thread.currentThread().getName() + " purchased " + ticketsToRemove + " tickets. (" + retrievedTickets + ") Remaining: " + tickets.size());
+            notifyAll(); // Notify vendors that space is available
         } catch (Exception e) {
             handleError("Error removing tickets: ", e);
         }
     }
 
-    public int getAvailableTickets() {
-        return tickets.size();
-    }
-
-    public int getMaxTicketCapacity() {
-        return maxCapacity;
-    }
 
     private void logAndPrint(String message) {
         System.out.println(message);

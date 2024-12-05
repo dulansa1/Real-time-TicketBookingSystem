@@ -5,26 +5,26 @@ import java.io.*;
 import com.google.gson.Gson;
 
 public class SystemConfig {
-    private int totalTickets;
-    private int ticketReleaseRate;
-    private int customerRetrievalRate;
-    private int maxTicketCapacity;
+    private int totalTickets; // Total number of tickets vendors can add
+    private int ticketReleaseRate; // Number of tickets a vendor can release per second
+    private int customerRetrievalRate; // Number of tickets a customer can retrieve per second
+    private int maxTicketCapacity; // The max tickets a customer can buy or a vendor can release at a time
 
     private transient Scanner scanner = new Scanner(System.in); // Transient to avoid serialization
 
     // Default constructor with default values
     public SystemConfig() {
-        this.totalTickets =100;
+        this.totalTickets = 100;
         this.ticketReleaseRate = 10;
         this.customerRetrievalRate = 5;
-        this.maxTicketCapacity = 500;
+        this.maxTicketCapacity = 50;
     }
 
     public void configureSystem() {
-        totalTickets = getValidInput("Enter total number of tickets: ");
-        ticketReleaseRate = getValidInput("Enter ticket release rate (per second): ");
-        customerRetrievalRate = getValidInput("Enter customer retrieval rate (per second): ");
-        maxTicketCapacity = getValidInput("Enter maximum ticket capacity: ");
+        totalTickets = getValidInput("Enter total number of tickets (that vendors can add): ");
+        ticketReleaseRate = getValidInput("Enter ticket release rate (number of tickets vendors can release per second): ");
+        customerRetrievalRate = getValidInput("Enter customer retrieval rate (number of tickets customers can retrieve per second): ");
+        maxTicketCapacity = getValidInput("Enter maximum ticket capacity (max tickets a customer can buy or a vendor can release at a time): ");
     }
 
     private int getValidInput(String prompt) {
@@ -81,5 +81,3 @@ public class SystemConfig {
         return maxTicketCapacity;
     }
 }
-
-

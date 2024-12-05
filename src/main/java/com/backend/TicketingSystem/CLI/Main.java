@@ -35,12 +35,12 @@ public class Main {
         }
 
         // Use the configuration
-        int initialTotalTickets = config.getTotalTickets();
-        int maxCapacity = config.getMaxTicketCapacity();
+        int totalTickets = config.getTotalTickets();
         int ticketReleaseRate = config.getTicketReleaseRate();
         int customerRetrievalRate = config.getCustomerRetrievalRate();
+        int maxCapacity = config.getMaxTicketCapacity();
 
-        TicketPool pool = new TicketPool(maxCapacity, initialTotalTickets);
+        TicketPool pool = new TicketPool(maxCapacity, totalTickets);
 
         // Create and start vendor threads
         Thread vendor1 = new Thread(new Vendor(pool, ticketReleaseRate), "Vendor-1");
