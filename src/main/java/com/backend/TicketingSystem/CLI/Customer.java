@@ -1,5 +1,4 @@
 package com.backend.TicketingSystem.CLI;
-
 public class Customer implements Runnable {
     private final TicketPool pool;
     private final int ticketDemand;
