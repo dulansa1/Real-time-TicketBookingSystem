@@ -1,0 +1,157 @@
+2025-01-31 21:45:44 - Vendor-1 added 1 tickets. (Ticket id=1) Total: 1
+2025-01-31 21:45:44 - Vendor-3 added 1 tickets. (Ticket id=2) Total: 2
+2025-01-31 21:45:44 - Vendor-2 added 1 tickets. (Ticket id=3) Total: 3
+2025-01-31 21:45:45 - Customer-3 purchased 2 tickets. (Ticket id=1, Ticket id=2) Remaining: 1
+2025-01-31 21:45:45 - Customer-2 purchased 1 tickets. (Ticket id=3) Remaining: 0
+2025-01-31 21:45:45 - Customer-4 is waiting to purchase tickets.
+2025-01-31 21:45:45 - Customer-1 is waiting to purchase tickets.
+2025-01-31 21:45:45 - Vendor-1 added 1 tickets. (Ticket id=4) Total: 1
+2025-01-31 21:45:45 - Customer-4 purchased 1 tickets. (Ticket id=4) Remaining: 0
+2025-01-31 21:45:45 - Customer-1 is waiting to purchase tickets.
+2025-01-31 21:45:45 - Vendor-2 added 1 tickets. (Ticket id=5) Total: 1
+2025-01-31 21:45:45 - Customer-1 purchased 1 tickets. (Ticket id=5) Remaining: 0
+2025-01-31 21:45:45 - Vendor-3 added 1 tickets. (Ticket id=6) Total: 1
+2025-01-31 21:45:46 - Vendor-2 added 1 tickets. (Ticket id=7) Total: 2
+2025-01-31 21:45:46 - Vendor-1 added 1 tickets. (Ticket id=8) Total: 3
+2025-01-31 21:45:46 - Vendor-3 is waiting to add tickets.
+2025-01-31 21:45:47 - Customer-3 purchased 2 tickets. (Ticket id=6, Ticket id=7) Remaining: 1
+2025-01-31 21:45:47 - Vendor-3 added 1 tickets. (Ticket id=9) Total: 2
+2025-01-31 21:45:47 - Customer-2 purchased 2 tickets. (Ticket id=8, Ticket id=9) Remaining: 0
+2025-01-31 21:45:47 - Customer-4 is waiting to purchase tickets.
+2025-01-31 21:45:47 - Vendor-1 added 1 tickets. (Ticket id=10) Total: 1
+2025-01-31 21:45:47 - Customer-4 purchased 1 tickets. (Ticket id=10) Remaining: 0
+2025-01-31 21:45:47 - Customer-1 trying to buy tickets, but tickets are sold out.
+2025-01-31 21:45:47 - Vendor-2 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:45:48 - Vendor-3 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:45:48 - Vendor-1 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:45:48 - Vendor-2 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:45:49 - Customer-3 trying to buy tickets, but tickets are sold out.
+2025-01-31 21:45:49 - Customer-2 trying to buy tickets, but tickets are sold out.
+2025-01-31 21:45:49 - Customer-4 trying to buy tickets, but tickets are sold out.
+2025-01-31 21:45:49 - Customer-1 trying to buy tickets, but tickets are sold out.
+2025-01-31 21:45:49 - Vendor-3 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:45:49 - Vendor-1 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:45:49 - Vendor-2 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:45:50 - Vendor-3 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:45:50 - Vendor-1 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:45:50 - Vendor-2 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:45:51 - Customer-2 trying to buy tickets, but tickets are sold out.
+2025-01-31 21:45:51 - Customer-1 trying to buy tickets, but tickets are sold out.
+2025-01-31 21:45:51 - Customer-4 trying to buy tickets, but tickets are sold out.
+2025-01-31 21:45:51 - Customer-3 trying to buy tickets, but tickets are sold out.
+2025-01-31 21:45:51 - Vendor-3 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:45:51 - Vendor-1 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:45:51 - Vendor-2 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:45:52 - Vendor-3 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:45:52 - Vendor-1 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:45:52 - Vendor-2 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:45:53 - Customer-3 trying to buy tickets, but tickets are sold out.
+2025-01-31 21:45:53 - Customer-1 trying to buy tickets, but tickets are sold out.
+2025-01-31 21:45:53 - Customer-4 trying to buy tickets, but tickets are sold out.
+2025-01-31 21:45:53 - Customer-2 trying to buy tickets, but tickets are sold out.
+2025-01-31 21:45:53 - Vendor-3 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:45:53 - Vendor-1 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:45:53 - Vendor-2 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:45:54 - Vendor-1 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:45:54 - Vendor-3 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:45:54 - Vendor-2 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:45:55 - Customer-3 trying to buy tickets, but tickets are sold out.
+2025-01-31 21:45:55 - Customer-2 trying to buy tickets, but tickets are sold out.
+2025-01-31 21:45:55 - Customer-4 trying to buy tickets, but tickets are sold out.
+2025-01-31 21:45:55 - Customer-1 trying to buy tickets, but tickets are sold out.
+2025-01-31 21:45:55 - Vendor-1 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:45:55 - Vendor-3 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:45:55 - Vendor-2 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:45:56 - Vendor-3 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:45:56 - Vendor-1 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:45:56 - Vendor-2 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:45:57 - Customer-3 trying to buy tickets, but tickets are sold out.
+2025-01-31 21:45:57 - Customer-1 trying to buy tickets, but tickets are sold out.
+2025-01-31 21:45:57 - Customer-4 trying to buy tickets, but tickets are sold out.
+2025-01-31 21:45:57 - Customer-2 trying to buy tickets, but tickets are sold out.
+2025-01-31 21:45:57 - Vendor-1 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:45:57 - Vendor-3 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:45:57 - Vendor-2 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:45:58 - Vendor-1 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:45:58 - Vendor-3 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:45:58 - Vendor-2 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:45:59 - Customer-3 trying to buy tickets, but tickets are sold out.
+2025-01-31 21:45:59 - Customer-1 trying to buy tickets, but tickets are sold out.
+2025-01-31 21:45:59 - Customer-2 trying to buy tickets, but tickets are sold out.
+2025-01-31 21:45:59 - Customer-4 trying to buy tickets, but tickets are sold out.
+2025-01-31 21:45:59 - Vendor-1 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:45:59 - Vendor-3 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:45:59 - Vendor-2 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:46:00 - Vendor-1 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:46:00 - Vendor-3 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:46:00 - Vendor-2 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:46:01 - Customer-3 trying to buy tickets, but tickets are sold out.
+2025-01-31 21:46:01 - Customer-2 trying to buy tickets, but tickets are sold out.
+2025-01-31 21:46:01 - Customer-1 trying to buy tickets, but tickets are sold out.
+2025-01-31 21:46:01 - Customer-4 trying to buy tickets, but tickets are sold out.
+2025-01-31 21:46:01 - Vendor-1 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:46:01 - Vendor-3 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:46:01 - Vendor-2 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:46:02 - Vendor-1 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:46:02 - Vendor-3 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:46:02 - Vendor-2 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:46:03 - Customer-3 trying to buy tickets, but tickets are sold out.
+2025-01-31 21:46:03 - Customer-2 trying to buy tickets, but tickets are sold out.
+2025-01-31 21:46:03 - Customer-4 trying to buy tickets, but tickets are sold out.
+2025-01-31 21:46:03 - Customer-1 trying to buy tickets, but tickets are sold out.
+2025-01-31 21:46:03 - Vendor-1 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:46:03 - Vendor-3 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:46:03 - Vendor-2 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:46:04 - Vendor-1 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:46:04 - Vendor-3 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:46:04 - Vendor-2 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:46:05 - Customer-3 trying to buy tickets, but tickets are sold out.
+2025-01-31 21:46:05 - Customer-2 trying to buy tickets, but tickets are sold out.
+2025-01-31 21:46:05 - Customer-1 trying to buy tickets, but tickets are sold out.
+2025-01-31 21:46:05 - Customer-4 trying to buy tickets, but tickets are sold out.
+2025-01-31 21:46:05 - Vendor-1 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:46:05 - Vendor-3 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:46:05 - Vendor-2 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:46:06 - Vendor-1 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:46:06 - Vendor-3 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:46:06 - Vendor-2 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:46:07 - Customer-3 trying to buy tickets, but tickets are sold out.
+2025-01-31 21:46:07 - Customer-4 trying to buy tickets, but tickets are sold out.
+2025-01-31 21:46:07 - Customer-1 trying to buy tickets, but tickets are sold out.
+2025-01-31 21:46:07 - Customer-2 trying to buy tickets, but tickets are sold out.
+2025-01-31 21:46:07 - Vendor-1 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:46:07 - Vendor-3 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:46:07 - Vendor-2 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:46:08 - Vendor-1 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:46:08 - Vendor-3 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:46:08 - Vendor-2 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:46:09 - Customer-2 trying to buy tickets, but tickets are sold out.
+2025-01-31 21:46:09 - Customer-4 trying to buy tickets, but tickets are sold out.
+2025-01-31 21:46:09 - Customer-3 trying to buy tickets, but tickets are sold out.
+2025-01-31 21:46:09 - Customer-1 trying to buy tickets, but tickets are sold out.
+2025-01-31 21:46:09 - Vendor-1 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:46:09 - Vendor-3 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:46:09 - Vendor-2 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:46:10 - Vendor-1 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:46:10 - Vendor-3 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:46:10 - Vendor-2 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:46:11 - Customer-4 trying to buy tickets, but tickets are sold out.
+2025-01-31 21:46:11 - Customer-2 trying to buy tickets, but tickets are sold out.
+2025-01-31 21:46:11 - Customer-1 trying to buy tickets, but tickets are sold out.
+2025-01-31 21:46:11 - Customer-3 trying to buy tickets, but tickets are sold out.
+2025-01-31 21:46:11 - Vendor-1 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:46:11 - Vendor-3 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:46:11 - Vendor-2 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:46:12 - Vendor-1 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:46:12 - Vendor-3 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:46:12 - Vendor-2 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:46:13 - Customer-2 trying to buy tickets, but tickets are sold out.
+2025-01-31 21:46:13 - Customer-4 trying to buy tickets, but tickets are sold out.
+2025-01-31 21:46:13 - Customer-3 trying to buy tickets, but tickets are sold out.
+2025-01-31 21:46:13 - Customer-1 trying to buy tickets, but tickets are sold out.
+2025-01-31 21:46:13 - Vendor-1 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:46:13 - Vendor-3 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:46:13 - Vendor-2 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:46:14 - Vendor-1 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:46:14 - Vendor-3 tried to add tickets, but total tickets limit reached.
+2025-01-31 21:46:14 - Vendor-2 tried to add tickets, but total tickets limit reached.

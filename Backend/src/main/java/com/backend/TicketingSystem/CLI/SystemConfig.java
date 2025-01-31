@@ -13,10 +13,6 @@ public class SystemConfig {
     private int customerRetrievalRate; // Number of tickets a customer can retrieve per second
     private int maxTicketCapacity; // The max tickets a customer can buy or a vendor can release at a time
 
-    @Bean
-    public TicketPool ticketPool() {
-        return new TicketPool(maxTicketCapacity, totalTickets);
-    }
     private transient Scanner scanner = new Scanner(System.in); // Transient to avoid serialization
 
     public void configureSystem() {
