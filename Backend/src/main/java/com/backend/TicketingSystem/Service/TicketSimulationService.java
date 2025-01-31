@@ -9,7 +9,7 @@ import java.util.List;
 
 @Service
 public class TicketSimulationService {
-    private volatile boolean running = false;
+    private boolean running = false;
     List<Thread> vendorThreads = new ArrayList<>();
     List<Thread> customerThreads = new ArrayList<>();
     private TicketPool ticketPool;
