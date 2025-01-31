@@ -12,7 +12,7 @@ public class SystemConfig {
     private int customerRetrievalRate; // Number of tickets a customer can retrieve per second
     private int maxTicketCapacity; // The max tickets a customer can buy or a vendor can release at a time
 
-    private transient Scanner scanner = new Scanner(System.in); // Transient to avoid serialization
+    private Scanner scanner = new Scanner(System.in);
 
     public void configureSystem() {
         totalTickets = getValidInput("Enter total number of tickets (Total tickets vendors can add): ");
