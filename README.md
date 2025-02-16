@@ -1,6 +1,6 @@
 # Real-time Simulation Ticket Booking System
 This project is mainly based on OOP concepts frontend development that allows users to view real-time updates, 
-and control operations.It is build with Reat.js for tha front and Spring Boot for the backend.
+and control operations.It is build with Reat.js for the front and Spring Boot for the backend.
 
 **Features**
 * Real-time ticket pool status display.
